@@ -5,6 +5,7 @@
 
 html {
   font-family: "Raleway";
+  text-align: center;
 }
 
 body {
@@ -25,6 +26,21 @@ body {
   position: relative;
 }
 
+.text,
+.third_page_head,
+.sec_page_button,
+.footer_button,
+.sec_footer,
+.css_link {
+  color: #fff;
+}
+
+.sec_page_button,
+.footer_button,
+.sec_footer {
+  background-color: #000000;
+}
+
 .first_page {
   background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
 }
@@ -36,8 +52,6 @@ body {
 .text,
 .third_page_head {
   position: relative;
-  text-align: center;
-  color: rgb(255, 255, 255);
   margin: -569px 0 569px 0;
   letter-spacing: 4px;
 }
@@ -60,17 +74,11 @@ body {
   font-weight: 600;
 }
 
-.sec_page_head,
-.third_page_head,
-.fourth_page_head {
-  text-align: center;
-}
-
 .sec_page_heading,
 .fourth_page_heading {
   font-size: 36px;
   font-weight: bold;
-  color: rgb(114, 114, 114);
+  color: #727272;
   margin: -110px 0 45px 0;
 }
 
@@ -92,19 +100,18 @@ body {
 .sec_page_button,
 .footer_button {
   padding: 20px 23px;
-  background-color: black;
-  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   font-size: 18px;
   font-family: "Raleway";
   margin-bottom: 80px;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .sec_page_button:hover,
 .footer_button:hover {
-  background-color: rgb(190, 190, 190);
-  color: rgb(0, 0, 0);
+  background-color: #bebebe;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -147,7 +154,6 @@ body {
 
 .footer {
   background-color: #ffdddd;
-  text-align: center;
   padding: 50px 0 20px 0;
 }
 
@@ -176,14 +182,12 @@ body {
 .sec_footer {
   font-size: 15px;
   padding: 36px;
-  background-color: black;
-  color: white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
-.css_link {
-  color: white;
+.css_link:hover {
+  color: #008000;
 }
 
 .navbar {
@@ -201,22 +205,22 @@ body {
 .name_bar,
 .wed_bar,
 .rsvp_bar {
-  /* text-decoration: none; */
-  padding: 10px 200px;
-  margin: 0 7px;
+  font-size: 15px;
+  padding: 13px 200px;
+  margin: 0 9.37px;
+  font-weight: 400;
 }
 
 .home_bar:hover,
 .name_bar:hover,
 .wed_bar:hover,
 .rsvp_bar:hover {
-  background-color: gray;
-  padding: 10px 200px;
-  opacity: 0.9;
+  background-color: #808080;
+  padding: 13px 200px;
 }
 
 .footer_link {
   text-decoration: none;
-  color: black;
+  color: #000000;
   cursor: pointer;
 }
