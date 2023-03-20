@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Raleway";
+}
+
+body {
+  background-color: #f3e2e2;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2);
+}
+
+.first_page,
+.third_page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 955px;
+  position: relative;
+}
+
+.first_page {
+  background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
+}
+
+.third_page {
+  background-image: url(https://www.w3schools.com/w3images/flowers.jpg);
+}
+
+.text,
+.third_page_head {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: -569px 0 569px 0;
+  letter-spacing: 4px;
+}
+
+.heading,
+.third_page_heading {
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.head_para,
+.date,
+.third_page_para {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-weight: 600;
+}
+
+.sec_page_head,
+.third_page_head,
+.fourth_page_head {
+  text-align: center;
+}
+
+.sec_page_heading,
+.fourth_page_heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(114, 114, 114);
+  margin: -110px 0 45px 0;
+}
+
+.sec_page_img,
+.fourth_page_img {
+  margin: 3px 0 -2px 0;
+  width: 980px;
+  border-radius: 4px;
+}
+
+.sec_page_para {
+  text-align: left;
+  width: 980px;
+  margin: 45px auto;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.sec_page_button,
+.footer_button {
+  padding: 20px 23px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Raleway";
+  margin-bottom: 80px;
+}
+
+.sec_page_button:hover,
+.footer_button:hover {
+  background-color: rgb(190, 190, 190);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.third_page_head {
+  letter-spacing: 0px;
+  margin: -560px 0 569px 0;
+}
+
+.third_page_heading {
+  margin-bottom: 60px;
+}
+
+.fourth_page_heading {
+  margin: -95px 0 75px 0;
+}
+
+.fourth_page_paras {
+  display: flex;
+  margin: 50px 0 70px 600px;
+  line-height: 3;
+}
+
+.fourth_page_sec_para {
+  margin-left: 275px;
+}
+
+.para_head,
+.sec_para_head {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: -15px;
+}
+
+.para_one,
+.para_two,
+.para_three,
+.para_four {
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #ffdddd;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+.footer_head,
+.footer_para {
+  font-weight: 400;
+  margin: 30px 0;
+  letter-spacing: 4px;
+}
+
+.footer_head {
+  font-size: 35px;
+}
+
+.footer_para {
+  font-size: 17.5px;
+  margin-bottom: 35px;
+}
+
+.footer_button {
+  padding: 18px 60px;
+  font-size: 24px;
+  background-color: #f88078;
+}
+
+.sec_footer {
+  font-size: 15px;
+  padding: 36px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.css_link {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 5px 0px;
+  opacity: 0.8;
+}
+
+.home_bar,
+.name_bar,
+.wed_bar,
+.rsvp_bar {
+  /* text-decoration: none; */
+  padding: 10px 200px;
+  margin: 0 7px;
+}
+
+.home_bar:hover,
+.name_bar:hover,
+.wed_bar:hover,
+.rsvp_bar:hover {
+  background-color: gray;
+  padding: 10px 200px;
+  opacity: 0.9;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
