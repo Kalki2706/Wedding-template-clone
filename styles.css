@@ -6,6 +6,7 @@
 html {
   font-family: "Raleway";
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 body {
