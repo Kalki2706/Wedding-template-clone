@@ -216,6 +216,7 @@ body {
 .wed_bar:hover,
 .rsvp_bar:hover {
   background-color: #808080;
+  cursor: pointer;
   padding: 13px 200px;
 }
 
