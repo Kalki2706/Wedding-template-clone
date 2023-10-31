@@ -2,117 +2,121 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wedding Template</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAYFBMVEX///+63c6gz7um0sCr1cSv18aYzLYmonRjtpTB4NP4/Pvu9/PT6eA3pnyFxKoAkFcAlV8AklpruZoAlV4AmmgAmGTi8evl8+4AiUmLx69Yso612ssupHgLnWxBqYHK5dqH3wIXAAAAq0lEQVR4AdzLgwEDQRRF0bu27f67zJuYDeQMv/gDlu24/OL5QYiI63luBMSup1+CpBlXeVGWhXK+3rKqkazxuCrbtquJm9aoemQYubJVLZJJt3QzTOlScXPOtbJ2Gk1xtiDlxm1UVa0h0Gfn1dYapY9VafTghXLSAauelVeBGXSAw4xavDC5DWPv2sblhXLVgpFWbcCbtLil5iLi3X4aTEhMFjMmxJFYQxIAAFFuC1yESb31AAAAAElFTkSuQmCC"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>W3.CSS Template</title>
   </head>
   <body>
     <header>
-      <span id="home"></span>
-      <div class="first_page"></div>
-
-      <div class="text">
-        <h1 class="heading">Jane & John</h1>
-        <p class="head_para">Are getting married</p>
-        <p class="date">17.07.2017</p>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#jane&john">Jane & John</a></li>
+          <li><a href="#wedding">Wedding</a></li>
+          <li><a class="nav__rsvp" href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div class="sec_page">
-        <div class="sec_page_head">
-          <span id="name"></span>
-          <h2 class="sec_page_heading">Jane & John</h2>
-          <img
-            src="https://www.w3schools.com/w3images/wedding_couple2.jpg"
-            alt="Kiss"
-            class="sec_page_img"
-          />
-          <p class="sec_page_para">
-            <em
-              >You all know us. And we all know you. We are getting married
-              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.</em
-            >
-          </p>
-          <button class="sec_page_button">Wedding Details</button>
+      <section id="home" class="container hero__section grayscale-50">
+        <div class="hero__text color__white">
+          <h1 id="heading">Jane & John</h1>
+          <p id="info">Are getting married</p>
+          <h2 id="date">17.07.2017</h2>
         </div>
-      </div>
+      </section>
 
-      <div class="third_page"></div>
-      <div class="third_page_head">
-        <h1 class="third_page_heading">You Are Invited</h1>
-        <p class="third_page_para">Of course..</p>
-      </div>
+      <!-- WEDDING DETAILS SECTION-->
+      <section id="jane&john" class="container wedding__details">
+        <h2 id="couples__name">Jane & John</h2>
+        <img
+          class="couples__pic grayscale-75 margin__auto"
+          src="https://www.w3schools.com/w3images/wedding_couple2.jpg"
+          alt="Kiss of Peace"
+        />
+        <em class="fz-15 lh-2 margin__auto mb-3em">
+          You all know us. And we all know you. We are getting married lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </em>
+        <a href="" class="cta--btn details--btn fz-18 margin__auto"
+          >Wedding details</a
+        >
+      </section>
 
-      <div class="fourth_page">
-        <span id="wed"></span>
+      <!-- INVITE SECTION -->
+      <section class="container invite__section">
+        <div class="invite color__white">
+          <h2 class="invite__title">You Are Invited</h2>
+          <p class="permission">Of course</p>
+        </div>
+      </section>
 
-        <div class="fourth_page_head">
-          <h2 class="fourth_page_heading">THE WEDDING</h2>
-          <img
-            src="https://www.w3schools.com/w3images/wedding_location.jpg"
-            alt="Wedding hall"
-            class="fourth_page_img"
-          />
-
-          <div class="fourth_page_paras">
-            <div class="fourth_page_para">
-              <h3 class="para_head">When</h3>
-              <p class="para_one">Wedding Ceremony - 2:00pm</p>
-              <p class="para_two">Reception & Dinner - 5:00pm</p>
-            </div>
-
-            <div class="fourth_page_sec_para">
-              <h3 class="sec_para_head">Where</h3>
-              <p class="para_three">Some place, an address</p>
-              <p class="para_four">Some where, some address</p>
-            </div>
+      <!-- VENUE SECTION -->
+      <section id="wedding" class="container venue__details">
+        <h2 class="venue__title ttu">The Wedding</h2>
+        <img
+          class="venue__place__pic grayscale-75 margin__auto"
+          src="https://www.w3schools.com/w3images/wedding_location.jpg"
+          alt="Wedding Location"
+        />
+        <div class="date__place">
+          <div class="date">
+            <h3 class="fw400">When</h3>
+            <p class="fz-15">Wedding Ceremony - 2.00pm</p>
+            <p class="fz-15">Reception & Dinner - 5.00pm</p>
+          </div>
+          <div class="place">
+            <h3 class="fw400">Where</h3>
+            <p class="fz-15">Some place, an address</p>
+            <p class="fz-15">Some where, some address</p>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- RESPOND SECTION, RSVP -- ||French phrase|| 'Répondez s'il vous plaît' (Respond, if you please)-->
+      <section id="rsvp" class="container respond__section">
+        <h2 class="rsvp__title ttu fw400">Hope you can make it!</h2>
+        <p class="rsvp__date fz-18 lh-2">Kindly Respond By January, 2017</p>
+        <a class="cta--btn rsvp--btn fz-18 margin__auto" href="">RSVP</a>
+      </section>
     </main>
 
     <footer>
-      <div class="footer">
-        <span id="rsvp"></span>
-        <div class="footer_text">
-          <h1 class="footer_head">HOPE YOU CAN MAKE IT!</h1>
-          <h3 class="footer_para">Kindly Respond By January, 2017</h3>
-          <button class="footer_button">RSVP</button>
-        </div>
-      </div>
-
-      <div class="sec_footer">
-        <p class="copyright">
+      <!-- COPYRIGHT SECTION -->
+      <section class="copyright__section">
+        <p class="color__white fz-15">
           Powered by
-          <a href="https://www.w3schools.com/w3css/default.asp" class="css_link"
-            >w3.css</a
+          <a
+            class="copyright__website"
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            w3.css
+          </a>
         </p>
-      </div>
-
-      <div class="navbar">
-        <a href="#home" class="footer_link"><div class="home_bar">Home</div></a>
-
-        <a href="#name" class="footer_link"
-          ><div class="name_bar">Jane & John</div></a
-        >
-
-        <a href="#wed" class="footer_link"
-          ><div class="wed_bar">Wedding</div></a
-        >
-
-        <a href="#rsvp" class="footer_link"><div class="rsvp_bar">RSVP</div></a>
-      </div>
+      </section>
+      <!-- OVERLAY NAVBAR SPACER-->
+      <div class="mb"></div>
     </footer>
   </body>
 </html>

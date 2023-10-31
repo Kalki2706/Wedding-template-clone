@@ -1,228 +1,342 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  /* COLORS */
+  --black: #000;
+  --white: #fff;
+  --gray: #757575;
+  --antique-white: #f3e2e2;
+  --light-gray: #cdcdcd;
+  --plump-red: #f88078;
+  --light-pink: #ffdddd;
+  --green: #4caf50;
+
+  /* FONT */
+  --raleway: 'Raleway';
 }
 
-html {
-  font-family: "Raleway";
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
+html {
+  font: 62.5% var(--raleway, sans-serif);
+  text-align: center;
+}
+
 body {
-  background-color: #f3e2e2;
+  font-size: 1.6rem;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2);
+html,
+body {
+  overflow-x: hidden;
 }
 
-.first_page,
-.third_page {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 955px;
-  position: relative;
+.container {
+  padding: 2em 1em;
 }
 
-.text,
-.third_page_head,
-.sec_page_button,
-.footer_button,
-.sec_footer,
-.css_link {
-  color: #fff;
+/* CSS GROUPING SELECTOR */
+img,
+em {
+  width: 100%;
+  max-width: 980px;
 }
 
-.sec_page_button,
-.footer_button,
-.sec_footer {
-  background-color: #000000;
+.margin__auto {
+  margin: 0 auto;
 }
 
-.first_page {
-  background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
+a,
+nav {
+  text-decoration: none;
+  transition: all ease-in-out 0.25s;
 }
 
-.third_page {
-  background-image: url(https://www.w3schools.com/w3images/flowers.jpg);
+.fz-15 {
+  font-size: 1.5rem;
 }
 
-.text,
-.third_page_head {
-  position: relative;
-  margin: -569px 0 569px 0;
-  letter-spacing: 4px;
+a,
+.color__white {
+  color: var(--white);
 }
 
-.heading,
-.third_page_heading {
-  font-size: 64px;
-  font-weight: 400;
-  margin-bottom: 25px;
-}
-
-.head_para,
-.date,
-.third_page_para {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.date {
-  font-weight: 600;
-}
-
-.sec_page_heading,
-.fourth_page_heading {
-  font-size: 36px;
-  font-weight: bold;
-  color: #727272;
-  margin: -110px 0 45px 0;
-}
-
-.sec_page_img,
-.fourth_page_img {
-  margin: 3px 0 -2px 0;
-  width: 980px;
-  border-radius: 4px;
-}
-
-.sec_page_para {
-  text-align: left;
-  width: 980px;
-  margin: 45px auto;
-  font-size: 15px;
+.lh-2 {
   line-height: 2;
 }
 
-.sec_page_button,
-.footer_button {
-  padding: 20px 23px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: "Raleway";
-  margin-bottom: 80px;
-  transition: background-color 0.25s, color 0.25s;
+.fz-18 {
+  font-size: 1.8rem;
 }
 
-.sec_page_button:hover,
-.footer_button:hover {
-  background-color: #bebebe;
-  color: #000000;
-  cursor: pointer;
+.fw400 {
+  font-weight: 400;
 }
 
-.third_page_head {
-  letter-spacing: 0px;
-  margin: -560px 0 569px 0;
+.grayscale-50 {
+  filter: grayscale(50%);
 }
 
-.third_page_heading {
-  margin-bottom: 60px;
+.grayscale-75 {
+  filter: grayscale(75%);
 }
 
-.fourth_page_heading {
-  margin: -95px 0 75px 0;
+/* HEADER */
+header {
+  height: 0;
 }
 
-.fourth_page_paras {
+nav,
+.mb {
+  display: none;
+}
+
+/* MAIN */
+.hero__section,
+.invite__section {
+  min-height: 100%;
+  background: url(https://www.w3schools.com/w3images/wedding_couple.jpg)
+    center/cover no-repeat;
+}
+
+.hero__text,
+.invite {
+  padding: 0 5em;
+  text-align: center;
   display: flex;
-  margin: 50px 0 70px 600px;
-  line-height: 3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 95dvh;
 }
 
-.fourth_page_sec_para {
-  margin-left: 275px;
+#heading,
+.invite__title {
+  font-size: 6.5rem;
+  letter-spacing: 3px;
+  line-height: 1.4;
 }
 
-.para_head,
-.sec_para_head {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: -15px;
+#info,
+#date,
+.permission,
+.date__place h3 {
+  font-size: 3rem;
+  letter-spacing: 3.5px;
 }
 
-.para_one,
-.para_two,
-.para_three,
-.para_four {
-  font-size: 15px;
+#info,
+.rsvp__title {
+  line-height: 1.5;
 }
 
-.footer {
-  background-color: #ffdddd;
-  padding: 50px 0 20px 0;
+/* WEDDING DETAILS */
+.wedding__details,
+.venue__details {
+  padding: 4em 1em;
+  background: var(--antique-white);
 }
 
-.footer_head,
-.footer_para {
-  font-weight: 400;
-  margin: 30px 0;
+#couples__name,
+.venue__title,
+.rsvp__title {
+  font-size: 3.5rem;
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.couples__pic,
+.venue__place__pic {
+  border-radius: 0.5rem;
+  margin: 2.5em 0;
+}
+
+em,
+.cta--btn {
+  display: block;
+}
+
+.mb-3em {
+  margin-bottom: 3em;
+  text-align: left;
+}
+
+.cta--btn {
+  text-align: center;
+  max-width: 18rem;
+  padding: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.details--btn {
+  background: var(--black);
+}
+
+.details--btn:hover {
+  background: var(--light-gray);
+  color: var(--black);
+}
+
+/* INVITE SECTION */
+.invite__section {
+  background: url(https://www.w3schools.com/w3images/flowers.jpg) center/cover
+    no-repeat;
+}
+
+.invite {
+  padding: 0;
+  gap: 4rem;
+}
+
+.invite__title {
+  font-size: 6rem;
+  letter-spacing: 1.5px;
+  padding: 0 2em;
+}
+
+.permission {
+  letter-spacing: normal;
+}
+
+/* VENUE SECTION */
+.venue__place__pic {
+  margin: 4em 0;
+}
+
+.date__place {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+  gap: 1rem;
+}
+
+.date__place h3 {
+  letter-spacing: normal;
+}
+
+/* VENUE & RSVP COMBINE */
+.ttu {
+  text-transform: uppercase;
+}
+
+/* RESPOND SECTION */
+.respond__section {
+  padding: 4em 1em 5em;
+  background: var(--light-pink);
+}
+
+.rsvp__title {
   letter-spacing: 4px;
 }
 
-.footer_head {
-  font-size: 35px;
+.rsvp__date {
+  margin: 1em 0 1.5em 0;
+  letter-spacing: 4px;
 }
 
-.footer_para {
-  font-size: 17.5px;
-  margin-bottom: 35px;
+.rsvp--btn {
+  padding: 0.8em 0;
+  font-size: 2.3rem;
+  background: var(--plump-red);
 }
 
-.footer_button {
-  padding: 18px 60px;
-  font-size: 24px;
-  background-color: #f88078;
+.rsvp--btn:hover {
+  background: var(--light-gray);
+  color: var(--black);
 }
 
-.sec_footer {
-  font-size: 15px;
-  padding: 36px;
-  text-align: center;
-  margin-bottom: 55px;
+/* FOOTER -- COPYRIGHT SECTION */
+.copyright__section {
+  padding: 2.3em 1em;
+  background: var(--black);
 }
 
-.css_link:hover {
-  color: #008000;
+.copyright__website {
+  text-decoration: underline;
 }
 
-.navbar {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  padding: 5px 0px;
-  opacity: 0.8;
+.copyright__website:hover {
+  color: var(--green);
 }
 
-.home_bar,
-.name_bar,
-.wed_bar,
-.rsvp_bar {
-  font-size: 15px;
-  padding: 13px 200px;
-  margin: 0 9.37px;
-  font-weight: 400;
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: var(--antique-white);
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  nav:hover {
+    opacity: 1;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  li > a {
+    padding: 0.65em 2.5em;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.55rem;
+  }
+
+  li > a:hover {
+    background: var(--light-gray);
+    opacity: 1;
+  }
+
+  li > .nav__rsvp:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  /* NAVBAR SPACER */
+  nav,
+  .mb {
+    display: block;
+  }
+
+  .mb {
+    margin-bottom: 3.2em;
+  }
+
+  /* VENUE */
+  .date__place {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .date,
+  .place {
+    flex: 0 1 500px;
+  }
 }
 
-.home_bar:hover,
-.name_bar:hover,
-.wed_bar:hover,
-.rsvp_bar:hover {
-  background-color: #808080;
-  cursor: pointer;
-  padding: 13px 200px;
+@media only screen and (min-width: 900px) {
+  li > a {
+    padding: 0.65em 4.5em;
+  }
 }
 
-.footer_link {
-  text-decoration: none;
-  color: #000000;
-  cursor: pointer;
+@media only screen and (min-width: 1200px) {
+  li > a {
+    padding: 0.65em 7em;
+  }
 }
